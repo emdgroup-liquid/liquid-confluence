@@ -1,0 +1,311 @@
+body {
+	/* Typography */
+	font-family: var(--ld-font-body);
+
+	/* Confluence color scheme overwrite */
+	--liquid-theme-topbarcolour: var(--ld-thm-bubblegum-primary);
+	--liquid-theme-spacenamecolour: var(--ld-col-neutral-100);
+	--liquid-theme-headingtextcolour: var(--ld-col-neutral-900);
+	--liquid-theme-linkcolour: var(--ld-thm-primary);
+	--liquid-theme-bordercolour: var(--ld-thm-primary);
+	--liquid-theme-navbgcolour: var(--ld-thm-secondary);
+	--liquid-theme-navtextcolour: var(--ld-col-wht);
+	--liquid-theme-navselectedbgcolour: var(--ld-thm-primary-hover);
+	--liquid-theme-navselectedtextcolour: var(--ld-thm-wht);
+
+	/* Confluence custom CSS properties overwrites */
+	--aui-shadow1: var(--ld-thm-primary-alpha-lowest);
+	--aui-shadow2: var(--ld-thm-primary-alpha-lowest);
+	--aui-blanket: var(--ld-thm-primary-alpha-low);
+	--aui-body-text: var(--ld-col-neutral-900);
+	--aui-lesser-body-text: var(--ld-col-neutral-800);
+	--aui-lesser-header-text: var(--ld-col-neutral-700);
+	--aui-body-background: var(--ld-col-neutral-010);
+	--aui-page-background: var(--ld-col-wht);
+	--aui-page-border: var(--ld-col-neutral-050);
+	--aui-border: var(--ld-col-neutral-050);
+	--aui-border-strong: var(--ld-col-neutral-100);
+	--aui-focus: var(--ld-thm-primary-focus);
+	--aui-link-color: var(--ld-thm-primary-active);
+	--aui-link-hover-color: var(--ld-thm-primary-hover);
+	--aui-link-active-color: var(--ld-thm-primary-active);
+	--aui-link-hover-decoration: none;
+	--aui-link-visited-color: var(--ld-thm-secondary-active);
+	--aui-itemheading-text: var(--ld-col-neutral-600);
+	--aui-item-text: var(--ld-col-neutral-700);
+	--aui-item-focus-bg: var(--ld-thm-primary-alpha-lowest);
+	--aui-item-focus-text: var(--ld-col-neutral-700);
+	--aui-item-active-text: var(--ld-thm-primary-active);
+	--aui-item-active-bg: var(--ld-col-neutral-100);
+	--aui-item-disabled-text: var(--ld-col-neutral-700);
+	--aui-tooltip-bg-color: var(--ld-thm-primary-active);
+	--aui-tooltip-border-color: var(--ld-thm-primary-active);
+	--aui-tooltip-content-text-color: var(--ld-col-neutral-100);
+	--aui-tooltip-title-text-color: var(--ld-col-wht);
+	--aui-help-color: var(--ld-thm-secondary);
+	--aui-badge-bg-color: var(--ld-thm-primary-alpha-lowest);
+	--aui-badge-text-color: var(--ld-col-neutral-900);
+	--aui-badge-primary-bg-color: var(--ld-thm-primary-active);
+	--aui-badge-primary-text-color: var(--ld-col-wht);
+	--aui-badge-added-bg-color: var(--ld-col-rg-010);
+	--aui-badge-addded-text-color: var(--ld-col-rg-700);
+	--aui-badge-removed-bg-color: var(--ld-col-vy-010);
+	--aui-badge-removed-text-color: var(--ld-thm-error);
+	--aui-badge-important-bg-color: var(--ld-thm-error);
+	--aui-badge-important-text-color: var(--ld-col-wht);
+	--aui-badge-on-blue-text-color: var(--ld-col-wht);
+	--aui-badge-on-blue-bg-color: var(--ld-col-wht-alpha-low);
+	--aui-lozenge-bg-color: var(--ld-col-neutral-700);
+	--aui-lozenge-text-color: var(--ld-col-wht);
+	--aui-lozenge-subtle-bg-color: var(--ld-col-neutral-100);
+	--aui-lozenge-subtle-text-color: var(--ld-col-neutral-700);
+	--aui-lozenge-success-bg-color: var(--ld-thm-success);
+	--aui-lozenge-success-text-color: var(--ld-col-wht);
+	--aui-lozenge-success-subtle-bg-color: var(--ld-col-rg-010);
+	--aui-lozenge-success-subtle-text-color: var(--ld-col-rg-700);
+	--aui-lozenge-current-bg-color: var(--ld-thm-primary-active);
+	--aui-lozenge-current-text-color: var(--ld-col-wht);
+	--aui-lozenge-current-subtle-bg-color: var(--ld-col-neutral-100);
+	--aui-lozenge-current-subtle-text-color: var(--ld-thm-primary-active);
+	--aui-lozenge-moved-bg-color: var(--ld-thm-warning);
+	--aui-lozenge-moved-text-color: var(--ld-col-neutral-900);
+	--aui-lozenge-moved-subtle-bg-color: var(--ld-thm-warning-focus);
+	--aui-lozenge-moved-subtle-text-color: var(--ld-col-neutral-900);
+	--aui-lozenge-error-bg-color: var(--ld-thm-error);
+	--aui-lozenge-error-text-color: var(--ld-col-wht);
+	--aui-lozenge-error-subtle-bg-color: var(--ld-col-vy-010);
+	--aui-lozenge-error-subtle-text-color: var(--ld-thm-error);
+	--aui-lozenge-new-bg-color: var(--ld-thm-secondary);
+	--aui-lozenge-new-text-color: var(--ld-col-wht);
+	--aui-lozenge-new-subtle-bg-color: var(--ld-col-neutral-050);
+	--aui-lozenge-new-subtle-text-color: var(--ld-thm-secondary-active);
+	--aui-message-info-bg-color: var(--ld-col-neutral-100);
+	--aui-message-info-icon-color: var(--ld-thm-primary-active);
+	--aui-message-info-text-color: var(--ld-col-neutral-800);
+	--aui-message-success-bg-color: var(--ld-col-rg-010);
+	--aui-message-success-icon-color: var(--ld-thm-success);
+	--aui-message-success-text-color: var(--ld-col-neutral-800);
+	--aui-message-warning-bg-color: var(--ld-col-vy-050);
+	--aui-message-warning-icon-color: var(--ld-thm-warning);
+	--aui-message-warning-text-color: var(--ld-col-neutral-800);
+	--aui-message-error-bg-color: var(--ld-col-vy-010);
+	--aui-message-error-icon-color: var(--ld-thm-error);
+	--aui-message-error-text-color: var(--ld-col-neutral-800);
+	--aui-message-change-bg-color: var(--ld-col-neutral-050);
+	--aui-message-change-icon-color: var(--ld-thm-secondary);
+	--aui-message-change-text-color: var(--ld-col-neutral-800);
+	--aui-banner-error-bg-color: var(--ld-thm-error);
+	--aui-banner-error-text-color: var(--ld-col-wht);
+	--aui-flag-info-color: var(--ld-thm-primary-active);
+	--aui-flag-success-color: var(--ld-thm-success-focus);
+	--aui-flag-warning-color: var(--ld-thm-warning);
+	--aui-flag-error-color: var(--ld-thm-error);
+	--aui-button-default-bg-color: var(--ld-thm-primary-alpha-lowest);
+	--aui-button-default-text-color: var(--ld-col-neutral-800);
+	--aui-button-default-hover-bg-color: var(--ld-thm-primary-alpha-lowest);
+	--aui-button-default-active-bg-color: var(--ld-col-neutral-100);
+	--aui-button-default-active-text-color: var(--ld-thm-primary-active);
+	--aui-button-default-selected-bg-color: var(--ld-col-neutral-800);
+	--aui-button-default-selected-text-color: var(--ld-col-wht);
+	--aui-button-default-disabled-bg-color: rgba(9,30,66,0.04);
+	--aui-button-default-disabled-text-color: var(--ld-col-neutral-500);
+	--aui-button-primary-bg-color: var(--ld-thm-primary);
+	--aui-button-primary-text-color: var(--ld-col-wht);
+	--aui-button-primary-hover-bg-color: var(--ld-thm-primary-hover);
+	--aui-button-primary-active-bg-color: var(--ld-thm-primary-active);
+	--aui-button-primary-active-text-color: var(--ld-col-wht);
+	--aui-button-light-bg-color: var(--ld-col-wht);
+	--aui-button-subtle-text-color: var(--ld-col-neutral-800);
+	--aui-label-text-color: inherit;
+	--aui-label-link-color: inherit;
+	--aui-label-bg-color: var(--ld-col-neutral-010);
+	--aui-label-hover-bg-color: var(--ld-col-neutral-010);
+	--aui-label-close-hover-bg-color: var(--ld-thm-error-focus);
+	--aui-label-close-hover-text-color: var(--ld-col-neutral-900);
+	--aui-form-placeholder-text-color: var(--ld-col-neutral-700);
+	--aui-form-placeholder-disabled-text-color: var(--ld-col-neutral-500);
+	--aui-form-label-text-color: var(--ld-col-neutral-600);
+	--aui-form-error-text-color: var(--ld-thm-error);
+	--aui-form-description-text-color: var(--ld-col-neutral-600);
+	--aui-form-disabled-field-bg-color: var(--ld-col-neutral-010);
+	--aui-form-disabled-field-text-color: var(--ld-col-neutral-700);
+	--aui-form-disabled-field-label-color: var(--ld-col-neutral-700);
+	--aui-form-field-border-color: var(--ld-col-neutral-100);
+	--aui-form-field-hover-border-color: var(--ld-col-neutral-100);
+	--aui-form-field-default-text-color: var(--ld-col-neutral-900);
+	--aui-form-field-default-bg-color: var(--ld-col-neutral-010);
+	--aui-form-field-hover-bg-color: var(--ld-col-neutral-050);
+	--aui-form-field-focus-bg-color: var(--ld-col-wht);
+	--aui-form-select-bg-color: var(--ld-col-neutral-050);
+	--aui-form-select-border-color: var(--ld-col-neutral-050);
+	--aui-form-select-hover-bg-color: var(--ld-col-neutral-100);
+	--aui-form-checkbox-radio-hover-bg-color: var(--ld-thm-primary-hover);
+	--aui-form-checkbox-radio-active-bg-color: var(--ld-col-neutral-100);
+	--aui-form-optgroup-text-color: var(--ld-col-neutral-700);
+	--aui-form-optgroup-bg-color: var(--ld-col-neutral-010);
+	--aui-form-option-bg-color: var(--ld-col-wht);
+	--aui-form-pre-bg-color: var(--ld-col-neutral-010);
+	--aui-form-field-autofilled-bg-color: var(--ld-col-neutral-050);
+	--aui-form-field-autofilled-border-color: var(--ld-thm-secondary-hover);
+	--aui-form-field-autofilled-text-color: var(--ld-thm-secondary-active);
+	--aui-form-glyph-disabled-icon-color: var(--ld-col-neutral-500);
+	--aui-form-glyph-disabled-fill-color: rgba(9,30,66,0.04);
+	--aui-form-glyph-icon-color: var(--ld-col-wht);
+	--aui-form-glyph-fill-color: var(--ld-thm-primary-active);
+	--aui-form-checkbox-active-bg-color: var(--ld-col-neutral-100);
+	--aui-form-checkbox-active-border-color: var(--ld-col-neutral-100);
+	--aui-form-checkbox-active-icon-color: var(--ld-thm-primary-active);
+	--aui-form-radio-unchecked-bg-color: var(--ld-col-neutral-010);
+	--aui-form-radio-unchecked-border-color: var(--ld-col-neutral-100);
+	--aui-form-radio-unchecked-hover-bg-color: var(--ld-col-neutral-050);
+	--aui-form-radio-unchecked-hover-border-color: var(--ld-col-neutral-100);
+	--aui-toggle-default-bg-color: var(--ld-col-neutral-600);
+	--aui-toggle-default-bg-hover-color: var(--ld-col-neutral-500);
+	--aui-toggle-button-color: var(--ld-col-wht);
+	--aui-toggle-on-color: var(--ld-thm-success);
+	--aui-toggle-on-hover-color: var(--ld-thm-success-focus);
+	--aui-toggle-disabled-overlay-color: var(--ld-col-wht-alpha-medium);
+	--aui-toggle-tick-color: var(--ld-col-wht);
+	--aui-toggle-cross-color: var(--ld-col-wht);
+	--aui-form-notification-info-color: var(--ld-col-neutral-700);
+	--aui-progressbar-color: var(--ld-col-neutral-700);
+	--aui-progressbar-track-color: var(--ld-thm-primary-alpha-lowest);
+	--aui-spinner-color: var(--ld-col-neutral-700);
+	--aui-nav-pagination-text-color: var(--ld-col-neutral-900);
+	--aui-nav-pagination-active-text-color: var(--ld-col-neutral-700);
+	--aui-appheader-bg-color: var(--ld-thm-primary-active);
+	--aui-appheader-text-color: var(--ld-col-neutral-100);
+	--aui-appheader-item-focus-bg-color: var(--ld-thm-primary-alpha-low);
+	--aui-appheader-item-focus-text-color: var(--ld-col-neutral-100);
+	--aui-appheader-item-active-bg-color: var(--ld-thm-primary-alpha-low);
+	--aui-appheader-item-active-text-color: var(--ld-col-neutral-100);
+	--aui-appheader-quicksearch-bg-color: var(--ld-thm-primary-alpha-low);
+	--aui-appheader-quicksearch-text-color: var(--ld-col-neutral-100);
+	--aui-appheader-quicksearch-focus-text-color: var(--ld-col-neutral-100);
+	--aui-sidebar-icon-color: var(--ld-col-neutral-800);
+	--aui-sidebar-toggle-icon-color: var(--ld-col-neutral-800);
+	--aui-sidebar-bg-color: var(--ld-col-neutral-010);
+	--aui-sidebar-dropdown-arrow-color: var(--ld-col-neutral-800);
+	--aui-sidebar-tooltip-bg-color: var(--ld-col-neutral-900);
+	--aui-sidebar-badge-bg-color: var(--ld-col-neutral-100);
+	--aui-tabs-tab-border-color: var(--ld-col-neutral-050);
+	--aui-tabs-tab-text-color: var(--ld-col-neutral-700);
+	--aui-tabs-tab-hover-text-color: var(--ld-thm-primary-focus);
+	--aui-tabs-tab-active-border-color: var(--ld-thm-primary-active);
+	--aui-tabs-tab-active-text-color: var(--ld-thm-primary-active);
+	--aui-progress-tracker-step-border-color: var(--ld-col-neutral-010);
+	--aui-progress-tracker-container-color: var(--ld-col-neutral-010);
+	--aui-progress-tracker-current-step-color: var(--ld-thm-primary-hover);
+	--aui-progress-tracker-visited-step-text-color: var(--ld-col-neutral-900);
+	--aui-progress-tracker-visited-step-hover-text-color: var(--ld-thm-primary-active);
+	--aui-progress-tracker-visited-step-active-text-color: var(--ld-thm-primary-active);
+	--aui-progress-tracker-future-step-color: var(--ld-col-neutral-500);
+	--aui-progress-tracker-future-step-text-color: var(--ld-col-neutral-600);
+	--aui-table-row-text-color: var(--ld-col-neutral-900);
+	--aui-table-heading-text-color: var(--ld-col-neutral-600);
+	--aui-table-border-color: var(--ld-col-neutral-100);
+	--aui-table-caption-bg-color: var(--ld-col-neutral-010);
+	--aui-table-caption-text-color: var(--ld-col-neutral-700);
+	--aui-table-list-row-hover-color: var(--ld-thm-primary-alpha-lowest);
+	--aui-table-list-row-subtle-color: var(--ld-col-neutral-200);
+	--aui-table-sortable-hover-bg-color: var(--ld-thm-primary-alpha-lowest);
+	--aui-table-sortable-active-bg-color: var(--ld-col-neutral-100);
+	--aui-table-sortable-active-border-color: var(--ld-thm-primary-active);
+	--aui-table-sortable-active-text-color: var(--ld-thm-primary-active);
+	--aui-table-sortable-selected-border-color: var(--ld-col-neutral-700);
+	--aui-table-sortable-selected-text-color: var(--ld-col-neutral-800);
+	--aui-restfultable-row-focused-border-color: var(--ld-col-neutral-200);
+	--aui-restfultable-row-create-border-color: var(--ld-col-neutral-100);
+	--aui-restfultable-header-row-bg-color: var(--ld-col-wht);
+	--aui-restfultable-header-row-text-color: var(--ld-col-neutral-600);
+	--aui-restfultable-row-moving-bg-color: var(--ld-col-neutral-010);
+	--aui-restfultable-editable-em-text-color: var(--ld-col-neutral-700);
+	--aui-restfultable-row-active-bg-color: var(--ld-col-neutral-010);
+	--aui-restfultable-row-hover-bg-color: var(--ld-col-neutral-010);
+	--aui-dropdown-bg-color: var(--ld-col-wht);
+	--aui-dropdown-border-color: var(--ld-col-neutral-100);
+	--aui-select2-placeholder-text-color: var(--ld-col-neutral-700);
+	--aui-select2-chosen-bg-color: var(--ld-col-wht);
+	--aui-select2-chosen-text-color: var(--ld-col-neutral-900);
+	--aui-select2-chosen-hover-bg-color: var(--ld-col-wht);
+	--aui-select2-chosen-hover-text-color: var(--ld-col-neutral-900);
+	--aui-select2-active-chosen-bg-color: var(--ld-col-neutral-100);
+	--aui-select2-active-chosen-text-color: var(--ld-col-neutral-900);
+	--aui-dialog-bg-color: var(--ld-col-wht);
+	--aui-dialog-border-color: var(--ld-col-neutral-050);
+	--aui-dialog-header-warning-bg-color: var(--ld-thm-error);
+	--aui-dialog-header-warning-text-color: var(--ld-col-wht);
+	--aui-dialog-button-hover-border-color: var(--ld-col-neutral-700);
+	--aui-dialog-footer-hint-text-color: var(--ld-col-neutral-800);
+	--aui-datepicker-panel-bg-color: var(--ld-col-wht);
+	--aui-datepicker-panel-divider-color: var(--ld-col-neutral-100);
+	--aui-datepicker-heading-bg-color: var(--ld-col-neutral-010);
+	--aui-datepicker-heading-text-color: var(--ld-col-neutral-800);
+	--aui-datepicker-heading-weekdays-text-color: var(--ld-col-neutral-600);
+	--aui-datepicker-option-text-color: var(--ld-thm-primary-active);
+	--aui-datepicker-option-focus-bg-color: var(--ld-col-neutral-010);
+	--aui-datepicker-option-focus-text-color: var(--ld-thm-primary-active);
+	--aui-datepicker-option-selected-bg-color: var(--ld-thm-primary-active);
+	--aui-datepicker-option-selected-text-color: var(--ld-col-wht);
+	--aui-datepicker-option-unselectable-bg-color: var(--ld-col-neutral-010);
+	--aui-datepicker-option-unselectable-text-color: var(--ld-col-neutral-700);
+	--aui-datepicker-disabled-text-color: var(--ld-col-neutral-700);
+	--aui-datepicker-hint-text-color: var(--ld-col-neutral-800);
+}
+
+/* All buttons. */
+.aui-button {
+	transition: none !important;
+}
+
+/* Top bar. */
+body #header .aui-header {
+	background-color: var(--ld-thm-bubblegum-primary);
+	box-shadow: var(--ld-shadow-hover);
+}
+body #header .aui-header-inner {
+	background-color: transparent;
+}
+
+/* Primary button in top bar. */
+body #header .aui-header .aui-nav .aui-button-primary {
+	background-color: var(--ld-thm-warning);
+	color: var(--ld-thm-warning-active);
+}
+body #header .aui-header .aui-nav .aui-button-primary:hover {
+	background-color: var(--ld-thm-warning-hover);
+	color: var(--ld-thm-warning-active);
+}
+body #header .aui-header .aui-nav .aui-button-primary:focus {
+	background-color: var(--ld-thm-warning-focus);
+	color: var(--ld-thm-warning-active);
+}
+body #header .aui-header .aui-nav .aui-button-primary:active:focus-visible {
+	background-color: var(--ld-thm-warning-active);
+	color: var(--ld-thm-warning-focus);
+}
+
+/* Font weight fixes for small texts. */
+#likes-section *,
+#labels-section *,
+.page-metadata * {
+	font: var(--ld-typo-cap-m);
+	font-weight: bold !important;
+}
+
+/* Background cells. */
+#liquid-background-cells {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+}
+.acs-side-bar,
+#full-height-container {
+	background: transparent !important;
+}
+.ia-fixed-sidebar {
+	background: var(--ld-col-neutral-010);
+}
+#footer-logo {
+	background: transparent !important;
+}

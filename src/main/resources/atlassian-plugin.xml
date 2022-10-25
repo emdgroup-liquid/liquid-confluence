@@ -1,0 +1,50 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}"/>
+		<param name="plugin-icon">images/pluginIcon.png</param>
+		<param name="plugin-logo">images/pluginLogo.png</param>
+	</plugin-info>
+
+	<!-- add our i18n resource -->
+	<resource type="i18n" name="i18n" location="liquid-confluence"/>
+
+	<!-- add our web resources -->
+	<web-resource key="liquid-confluence-resources" name="liquid-confluence Web Resources">
+		<dependency>com.atlassian.auiplugin:ajs</dependency>
+
+		<resource type="download" name="liquid.global.css" location="/css/liquid/liquid.global.css"/>
+		<resource type="download" name="ld-bg-cells.css" location="/css/liquid/ld-bg-cells.css"/>
+		<resource type="download" name="liquid-confluence.css" location="/css/liquid-confluence.css"/>
+		<resource type="download" name="liquid-confluence.js" location="/js/liquid-confluence.js"/>
+		<resource type="download" name="images/" location="/images"/>
+
+		<context>admin</context>
+		<context>main</context>
+	</web-resource>
+
+	<theme key="liquidtheme" name="Liquid Theme" class="com.atlassian.confluence.themes.BasicTheme">
+		<description>Custom theme for Confluence based on the Liquid Design System</description>
+		<param name="includeClassicStyles" value="false"/>
+		<resource type="download" name="default-theme.css" location="/includes/css/default-theme.css">
+			<param name="source" value="webContext"/>
+		</resource>
+		<resource type="download" name="liquid-confluence.css" location="/css/liquid-confluence.css"/>
+		<colour-scheme key="${project.groupId}.${project.artifactId}:liquid-colours"/>
+		<space-ia value="true"/>
+	</theme>
+
+	<colour-scheme key="liquid-colours" name="Colors from the Liquid Design System"
+	               class="com.atlassian.confluence.themes.BaseColourScheme">
+		<colour key="property.style.topbarcolour" value="var(--liquid-theme-topbarcolour, rgb(80, 50, 145))"/>
+		<colour key="property.style.spacenamecolour" value="var(--liquid-theme-spacenamecolour, rgb(225, 225, 234))"/>
+		<colour key="property.style.headingtextcolour" value="var(--liquid-theme-headingtextcolour, rgb(15, 26, 46))"/>
+		<colour key="property.style.linkcolour" value="var(--liquid-theme-linkcolour, rgb(15, 105, 175))"/>
+		<colour key="property.style.bordercolour" value="var(--liquid-theme-bordercolour, rgb(15, 105, 175))"/>
+		<colour key="property.style.navbgcolour" value="var(--liquid-theme-navbgcolour, rgb(45, 190, 205))"/>
+		<colour key="property.style.navtextcolour" value="var(--liquid-theme-navtextcolour, rgb(255, 255, 255))"/>
+		<colour key="property.style.navselectedbgcolour" value="var(--liquid-theme-navselectedbgcolour, rgb(8, 88, 151))"/>
+		<colour key="property.style.navselectedtextcolour" value="var(--liquid-theme-navselectedtextcolour, rgb(255, 255, 255))"/>
+	</colour-scheme>
+</atlassian-plugin>
