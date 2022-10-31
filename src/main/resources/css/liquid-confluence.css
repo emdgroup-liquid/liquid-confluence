@@ -331,3 +331,13 @@ body::after {
 .userLogo.defaultLogo {
 	filter: hue-rotate(3deg) contrast(1.2) saturate(0.45);
 }
+
+/* Logo in header. */
+.aui-header .aui-header-logo-confluence .aui-header-logo-device {
+	background-image: url("images/confluence-liquid.svg") !important;
+}
+
+/* Default space logo. */
+[src="/confluence/images/logo/default-space-logo.svg"] {
+	filter: hue-rotate(35deg);
+}
