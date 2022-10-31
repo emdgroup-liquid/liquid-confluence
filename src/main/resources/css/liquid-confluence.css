@@ -309,3 +309,25 @@ body #header .aui-header .aui-nav .aui-button-primary:active:focus-visible {
 #footer-logo {
 	background: transparent !important;
 }
+
+/* Footer. */
+body::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background: var(--ld-thm-primary-active);
+}
+.footer-body {
+	filter: hue-rotate(180deg) invert(1);
+}
+
+/* Icons. */
+.aui-icon {
+	filter: hue-rotate(28deg) contrast(2.5) saturate(0.7);
+}
+
+/* Default user icon. */
+.userLogo.defaultLogo {
+	filter: hue-rotate(3deg) contrast(1.2) saturate(0.45);
+}
