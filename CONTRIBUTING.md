@@ -9,8 +9,11 @@
   sdk install java 11
   ```
 - [Atlassian Plugin SDK](https://developer.atlassian.com/server/framework/atlassian-sdk/install-the-atlassian-sdk-on-a-linux-or-mac-system/)
+- [Node.js](https://nodejs.org/en/download/)
 
 ## Development
+
+First run `npm install` in the project root directory.
 
 Start the dev server with:
 

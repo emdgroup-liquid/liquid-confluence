@@ -316,7 +316,7 @@ body::after {
 	position: fixed;
 	inset: 0;
 	z-index: -1;
-	background: var(--ld-thm-primary-active);
+	background: var(--ld-thm-bubblegum-active);
 }
 .footer-body {
 	filter: hue-rotate(180deg) invert(1);
