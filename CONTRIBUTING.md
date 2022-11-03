@@ -13,16 +13,8 @@
 
 ## Development
 
-First run `npm install` in the project root directory.
+1. `cd` into the `src-frontend` directory.
+2. Run `npm install && npm run atlas-run` (this starts up Confluence on localhost).
+3. As soon as Confluence is up and running, execute the command `npm run vite-build` in a new shell (vite now builds the frontend in [watch mode](https://vitejs.dev/config/build-options.html#build-watch)).
 
-Start the dev server with:
-
-```bash
-atlas-run --jvmargs "-Xmx2048m"
-```
-
-After applying changes to frontend resources, you will need to run the following command in a separate terminal in order for [QuickReload](https://developer.atlassian.com/server/framework/atlassian-sdk/automatic-plugin-reinstallation-with-quickreload/) to pick up the changes:
-
-```bash
-atlas-mvn package
-```
+After applying changes to frontend resources, Vite (actually Rollup) will automatically invoke [QuickReload](https://developer.atlassian.com/server/framework/atlassian-sdk/automatic-plugin-reinstallation-with-quickreload/). You will still need to reload the browser window manually – like back in the old days 🔄.

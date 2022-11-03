@@ -1,0 +1,43 @@
+{
+  "name": "liquid-confluence",
+  "version": "1.0.0",
+  "description": "Custom theme for Confluence based on the Liquid Design System",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/emdgroup-liquid/liquid-confluence.git"
+  },
+  "keywords": [
+    "confluence"
+  ],
+  "author": "User Experience Strategy & Design unit, part of the Chief Digital Organization at EMD Group <liquid@emdgroup.com> (https://github.com/emdgroup-liquid)",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "atlas-run": "cd .. && atlas-run",
+    "vite-build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.18",
+    "postcss-nested": "^6.0.0",
+    "postcss-nesting": "^10.2.0",
+    "prettier": "^2.7.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.0"
+  },
+  "dependencies": {
+    "@emdgroup-liquid/liquid": "^4.1.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "not dead"
+  ]
+}

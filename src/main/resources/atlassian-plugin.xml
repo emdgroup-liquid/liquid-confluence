@@ -14,11 +14,9 @@
 	<web-resource key="liquid-confluence-resources" name="liquid-confluence Web Resources">
 		<dependency>com.atlassian.auiplugin:ajs</dependency>
 
-		<resource type="download" name="liquid.global.css" location="/css/liquid/liquid.global.css"/>
-		<resource type="download" name="ld-bg-cells.css" location="/css/liquid/ld-bg-cells.css"/>
-		<resource type="download" name="liquid-confluence.css" location="/css/liquid-confluence.css"/>
-		<resource type="download" name="liquid-confluence.js" location="/js/liquid-confluence.js"/>
-		<resource type="download" name="images/" location="/images"/>
+		<resource type="download" name="out/" location="/out"/>
+		<resource type="download" name="out/style.css" location="/out/style.css"/>
+		<resource type="download" name="out/liquid-confluence.js" location="/out/liquid-confluence.js"/>
 
 		<context>admin</context>
 		<context>main</context>

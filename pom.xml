@@ -75,6 +75,7 @@
 				<version>${amps.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+          <compressJs>false</compressJs>
 					<productVersion>${confluence.version}</productVersion>
 					<productDataVersion>${confluence.data.version}</productDataVersion>
 					<enableQuickReload>true</enableQuickReload>

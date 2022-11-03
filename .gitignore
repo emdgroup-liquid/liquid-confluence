@@ -6,4 +6,5 @@
 *.iml
 target
 
-src/main/resources/css/liquid
+src/main/resources/out
+src-frontend/public/liquid
