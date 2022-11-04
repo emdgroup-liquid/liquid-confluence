@@ -344,7 +344,7 @@ body::after {
 /* Logo in header. */
 .aui-header .aui-header-logo-confluence .aui-header-logo-device {
   background-image: url('out/initial-m.svg') !important;
-  width: 3rem;
+  width: 2.2rem;
   height: auto;
 }
 
