@@ -15,7 +15,7 @@
   "type": "module",
   "scripts": {
     "atlas-clean": "(cd .. && atlas-clean);",
-    "atlas-run": "(cd .. && atlas-run);",
+    "atlas-run": "(cd .. && atlas-run --jvmargs \"-Xmx2048m\");",
     "vite-build": "tsc && vite build"
   },
   "devDependencies": {
