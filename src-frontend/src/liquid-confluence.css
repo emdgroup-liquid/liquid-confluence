@@ -26,9 +26,9 @@ body {
   --aui-border: var(--ld-col-neutral-050);
   --aui-border-strong: var(--ld-col-neutral-100);
   --aui-focus: var(--ld-thm-primary-focus);
-  --aui-link-color: var(--ld-thm-primary-active);
-  --aui-link-hover-color: var(--ld-thm-primary-hover);
-  --aui-link-active-color: var(--ld-thm-primary-active);
+  --aui-link-color: var(--ld-thm-primary-hover);
+  --aui-link-hover-color: var(--ld-thm-primary-active);
+  --aui-link-active-color: var(--ld-thm-primary-hover);
   --aui-link-hover-decoration: none;
   --aui-link-visited-color: var(--ld-thm-secondary-active);
   --aui-itemheading-text: var(--ld-col-neutral-600);
@@ -343,10 +343,36 @@ body::after {
 
 /* Logo in header. */
 .aui-header .aui-header-logo-confluence .aui-header-logo-device {
-  background-image: url('out/confluence-liquid.svg') !important;
+  background-image: url('out/initial-m.svg') !important;
+  width: 3rem;
+  height: auto;
 }
 
 /* Default space logo. */
 [src='/confluence/images/logo/default-space-logo.svg'] {
   filter: hue-rotate(35deg);
+}
+
+/* Fix color in links due to specificity issues in confluence code. */
+.aui-toolbar .aui-buttons .toolbar-item-link:hover button.toolbar-trigger,
+.aui-toolbar .aui-buttons .toolbar-item-link button.toolbar-trigger,
+.aui-navgroup-horizontal .aui-nav > li a,
+.aui-dialog .dialog-page-menu li.page-menu-item button.item-button,
+body.spaces .aui-tabs > .tabs-menu .menu-item a,
+body.spaces .aui-tabs > .tabs-menu .menu-item a:link,
+body.spaces .aui-tabs > .tabs-menu .menu-item a:visited,
+.aui-dialog .dialog-button-panel a.button-panel-link,
+a:not(.aui-button, .aui-dialog2-header-close) {
+  color: var(--aui-link-color);
+}
+
+/* Fix color in buttons due to specificity issues in confluence code. */
+.aui-dialog .dialog-button-panel button.button-panel-button {
+  color: var(--aui-btn-text);
+  background-color: var(--aui-btn-bg);
+
+  &:hover {
+    color: var(--aui-btn-text);
+    background-color: var(--aui-btn-bg);
+  }
 }
