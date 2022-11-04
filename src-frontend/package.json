@@ -15,7 +15,7 @@
   "type": "module",
   "scripts": {
     "atlas-clean": "(cd .. && atlas-clean);",
-    "atlas-run": "(cd .. && atlas-run;)",
+    "atlas-run": "(cd .. && atlas-run);",
     "vite-build": "tsc && vite build"
   },
   "devDependencies": {
