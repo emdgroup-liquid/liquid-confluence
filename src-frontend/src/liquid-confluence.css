@@ -348,7 +348,8 @@ body::after {
   height: auto;
 }
 
-/* Default space logo. */
+/* Default space logo, page icon. */
+.confluence-icon-page,
 [src='/confluence/images/logo/default-space-logo.svg'] {
   filter: hue-rotate(35deg);
 }
