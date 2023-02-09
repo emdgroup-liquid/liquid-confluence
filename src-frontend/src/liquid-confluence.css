@@ -273,6 +273,28 @@ body #header {
   }
 }
 
+.aui-header .aui-dropdown2-trigger,
+.aui-header .aui-dropdown2-trigger,
+#header .aui-header .aui-nav-link,
+#header .aui-header .aui-nav-imagelink,
+#header .aui-header .aui-nav-imagelink,
+#header .aui-header .aui-nav-imagelink {
+  color: var(--aui-link-color);
+}
+
+.aui-header .aui-dropdown2-trigger:hover,
+.aui-header .aui-dropdown2-trigger.active,
+#header .aui-header .aui-nav-link.active,
+#header .aui-header .aui-nav-imagelink.active,
+#header .aui-header .aui-nav-imagelink:focus,
+#header .aui-header .aui-nav-imagelink:hover,
+#header .aui-header a:focus,
+#header .aui-header a:hover,
+#header .aui-header a:active {
+  color: var(--aui-link-color);
+  background-color: var(--ld-thm-bubblegum-primary-hover);
+}
+
 /* Primary button in top bar. */
 body #header .aui-header .aui-nav .aui-button-primary {
   background-color: var(--ld-thm-warning);
@@ -333,7 +355,19 @@ body::after {
 
 /* Icons. */
 .aui-icon {
-  filter: hue-rotate(28deg) contrast(2.5) saturate(0.7);
+  filter: hue-rotate(30deg);
+
+  &.content-type-page {
+    filter: hue-rotate(28deg) contrast(2.5) saturate(0.7);
+  }
+
+  &.content-type-attachment-image {
+    filter: hue-rotate(120deg) contrast(2.5) saturate(0.4);
+  }
+
+  &.content-type-attachment-powerpoint {
+    filter: hue-rotate(130deg) contrast(1.5) saturate(0.4);
+  }
 }
 
 /* Default user icon. */
