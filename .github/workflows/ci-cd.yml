@@ -1,0 +1,17 @@
+name: Dependabot auto-approve
+on: pull_request_target
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - uses: fastify/github-action-merge-dependabot@v3
+        with:
+          merge-method: 'rebase'
+          target: 'minor'
+          github-token: ${{ github.token }}
