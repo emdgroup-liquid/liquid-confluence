@@ -1,5 +1,9 @@
-name: Dependabot auto-approve
-on: pull_request_target
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 permissions:
   contents: write
