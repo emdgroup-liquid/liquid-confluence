@@ -31,18 +31,41 @@
 		<resource type="download" name="liquid-confluence.css" location="/css/liquid-confluence.css"/>
 		<colour-scheme key="${project.groupId}.${project.artifactId}:liquid-colours"/>
 		<space-ia value="true"/>
+		<resource type="stylesheet" name="liquid-theme.vm" location="/includes/css/liquid-theme.vm"/>
+		<param name="space-config-path" value="/themes/liquidtheme/configuretheme.action"/>
+		<param name="global-config-path" value="/admin/themes/liquidtheme/configuretheme.action"/>
 	</theme>
 
 	<colour-scheme key="liquid-colours" name="Colors from the Liquid Design System"
 	               class="com.atlassian.confluence.themes.BaseColourScheme">
-		<colour key="property.style.topbarcolour" value="var(--liquid-theme-topbarcolour, rgb(80, 50, 145))"/>
-		<colour key="property.style.spacenamecolour" value="var(--liquid-theme-spacenamecolour, rgb(225, 225, 234))"/>
-		<colour key="property.style.headingtextcolour" value="var(--liquid-theme-headingtextcolour, rgb(15, 26, 46))"/>
-		<colour key="property.style.linkcolour" value="var(--liquid-theme-linkcolour, rgb(15, 105, 175))"/>
-		<colour key="property.style.bordercolour" value="var(--liquid-theme-bordercolour, rgb(15, 105, 175))"/>
-		<colour key="property.style.navbgcolour" value="var(--liquid-theme-navbgcolour, rgb(45, 190, 205))"/>
-		<colour key="property.style.navtextcolour" value="var(--liquid-theme-navtextcolour, rgb(255, 255, 255))"/>
-		<colour key="property.style.navselectedbgcolour" value="var(--liquid-theme-navselectedbgcolour, rgb(8, 88, 151))"/>
-		<colour key="property.style.navselectedtextcolour" value="var(--liquid-theme-navselectedtextcolour, rgb(255, 255, 255))"/>
+	  <colour key="property.style.topbarcolour" value="var(--liquid-theme-topbarcolour, rgb(255, 255, 255))"/>
+    <colour key="property.style.navbgcolour" value="var(--liquid-theme-navbgcolour, rgb(138, 104, 210))"/>
+    <colour key="property.style.breadcrumbstextcolour" value="var(--liquid-theme-breadcrumbstextcolour, rgb(80, 50, 145))"/>
+    <colour key="property.style.spacenamecolour" value="var(--liquid-theme-spacenamecolour, rgb(235, 228, 252))"/>
+    <colour key="property.style.headingtextcolour" value="var(--liquid-theme-headingtextcolour, rgb(15, 26, 46))"/>
+    <colour key="property.style.linkcolour" value="var(--liquid-theme-linkcolour, rgb(80, 50, 145))"/>
+    <colour key="property.style.bordercolour" value="var(--liquid-theme-bordercolour, rgb(138, 104, 210))"/>
+    <colour key="property.style.navtextcolour" value="var(--liquid-theme-navtextcolour, rgb(255, 255, 255))"/>
+    <colour key="property.style.navselectedbgcolour" value="var(--liquid-theme-navselectedbgcolour, rgb(80, 50, 145))"/>
+    <colour key="property.style.navselectedtextcolour" value="var(--liquid-theme-navselectedtextcolour, rgb(255, 255, 255))"/>
+    <colour key="property.style.topbarmenuselectedbgcolour" value="var(--liquid-theme-topbarmenuselectedbgcolour, rgb(113, 78, 187))"/>
+    <colour key="property.style.topbarmenuitemtextcolour" value="var(--liquid-theme-topbarmenuitemtextcolour, rgb(113, 78, 187))"/>
+    <colour key="property.style.menuselectedbgcolour" value="var(--liquid-theme-menuselectedbgcolour, rgb(113, 78, 187))"/>
+    <colour key="property.style.menuitemtextcolour" value="var(--liquid-theme-menuitemtextcolour, rgb(113, 78, 187))"/>
+    <colour key="property.style.menuitemselectedbgcolour" value="var(--liquid-theme-menuitemselectedbgcolour, rgb(113, 78, 187))"/>
+    <colour key="property.style.menuitemselectedtextcolour" value="var(--liquid-theme-menuitemselectedtextcolour, rgb(255, 255, 255))"/>
+
+
+    <!--<colour key="property.style.headerbuttonbgcolour" value="red"/>-->
+    <!--<colour key="property.style.headerbuttonbasebackgroundcolour" value="red"/>-->
+    <!--<colour key="property.style.menuitemselectedbackgroundcolour" value="blue"/>-->
+    <!--<colour key="property.style.menuselectedbackgroundcolour" value="orange"/>-->
+    <!--<colour key="property.style.topbarmenuselectedbackgroundcolour" value="purple"/>-->
+    <!--<colour key="property.style.navbackgroundcolour" value="brown"/>-->
+    <!--<colour key="property.style.navselectedbackgroundcolour" value="magenta"/>-->
+    <colour key="property.style.headerbuttontextcolour" value="var(--liquid-theme-headerbuttontextcolour, rgb(248, 248, 252))"/>
+    <colour key="property.style.searchfieldbackgroundcolour" value="var(--liquid-theme-searchfieldbackgroundcolour, rgb(80, 50, 145))"/>
+    <colour key="property.style.searchfieldtextcolour" value="var(--liquid-theme-searchfieldtextcolour, rgb(248, 248, 252))"/>
+    <colour key="property.style.topbarmenuselectedtextcolour" value="var(--liquid-theme-topbarmenuselectedtextcolour, rgb(248, 248, 252))"/>
 	</colour-scheme>
 </atlassian-plugin>

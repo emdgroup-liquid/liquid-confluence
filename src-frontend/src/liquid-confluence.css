@@ -3,15 +3,34 @@ body {
   font-family: var(--ld-font-body);
 
   /* Confluence color scheme overwrite */
-  --liquid-theme-topbarcolour: var(--ld-thm-bubblegum-primary);
+  --liquid-theme-topbarcolour: var(--ld-col-wht);
+  --liquid-theme-breadcrumbstextcolour: var(--ld-col-rp-700);
   --liquid-theme-spacenamecolour: var(--ld-col-neutral-100);
   --liquid-theme-headingtextcolour: var(--ld-col-neutral-900);
-  --liquid-theme-linkcolour: var(--ld-thm-primary);
-  --liquid-theme-bordercolour: var(--ld-thm-primary);
-  --liquid-theme-navbgcolour: var(--ld-thm-secondary);
+  --liquid-theme-linkcolour: var(--ld-col-rp-700);
+  --liquid-theme-bordercolour: var(--ld-col-rp-500);
+  --liquid-theme-navbgcolour: var(--ld-col-rp-500);
   --liquid-theme-navtextcolour: var(--ld-col-wht);
-  --liquid-theme-navselectedbgcolour: var(--ld-thm-primary-hover);
-  --liquid-theme-navselectedtextcolour: var(--ld-thm-wht);
+  --liquid-theme-navselectedbgcolour: var(--ld-col-rp-700);
+  --liquid-theme-navselectedtextcolour: var(--ld-col-wht);
+  --liquid-theme-topbarmenuselectedbgcolour: var(--ld-col-rp-600);
+  --liquid-theme-topbarmenuitemtextcolour: var(--ld-col-rp-600);
+  --liquid-theme-menuselectedbgcolour: var(--ld-col-rp-600);
+  --liquid-theme-menuitemtextcolour: var(--ld-col-rp-600);
+  --liquid-theme-menuitemselectedbgcolour: var(--ld-col-rp-600);
+  --liquid-theme-menuitemselectedtextcolour: var(--ld-col-wht);
+
+  --liquid-theme-headerbuttonbgcolour: var(--ld-col-wht);
+  --liquid-theme-headerbuttonbasebackgroundcolour: var(--ld-col-wht);
+  --liquid-theme-headerbuttontextcolour: var(--ld-col-neutral-010);
+  --liquid-theme-menuitemselectedbackgroundcolour: var(--ld-col-wht);
+  --liquid-theme-menuselectedbackgroundcolour: var(--ld-col-wht);
+  --liquid-theme-topbarmenuselectedbackgroundcolour: var(--ld-col-wht);
+  --liquid-theme-navbackgroundcolour: var(--ld-col-wht);
+  --liquid-theme-navselectedbackgroundcolour: var(--ld-col-wht);
+  --liquid-theme-searchfieldbackgroundcolour: var(--ld-col-rp-700);
+  --liquid-theme-searchfieldtextcolour: var(--ld-col-neutral-010);
+  --liquid-theme-topbarmenuselectedtextcolour: var(--ld-col-neutral-010);
 
   /* Confluence custom CSS properties overwrites */
   --aui-shadow1: var(--ld-thm-primary-alpha-lowest);
@@ -146,8 +165,8 @@ body {
   --aui-form-option-bg-color: var(--ld-col-wht);
   --aui-form-pre-bg-color: var(--ld-col-neutral-010);
   --aui-form-field-autofilled-bg-color: var(--ld-col-neutral-050);
-  --aui-form-field-autofilled-border-color: var(--ld-thm-secondary-hover);
-  --aui-form-field-autofilled-text-color: var(--ld-thm-secondary-active);
+  --aui-form-field-autofilled-border-color: var(--ld-thm-primary-hover);
+  --aui-form-field-autofilled-text-color: var(--ld-thm-primary-active);
   --aui-form-glyph-disabled-icon-color: var(--ld-col-neutral-500);
   --aui-form-glyph-disabled-fill-color: rgba(9, 30, 66, 0.04);
   --aui-form-glyph-icon-color: var(--ld-col-wht);
@@ -389,6 +408,13 @@ body::after {
 }
 
 /* Fix color in links due to specificity issues in confluence code. */
+.aui-button.aui-button-link.aui-button-link,
+.wiki-content.wiki-content a,
+.wiki-content.wiki-content a:link,
+.wiki-content.wiki-content a:visited,
+.wiki-content.wiki-content a:focus,
+.wiki-content.wiki-content a:hover,
+.wiki-content.wiki-content a:active,
 .aui-toolbar .aui-buttons .toolbar-item-link:hover button.toolbar-trigger,
 .aui-toolbar .aui-buttons .toolbar-item-link button.toolbar-trigger,
 .aui-navgroup-horizontal .aui-nav > li a,

@@ -11,6 +11,8 @@ const assetPath = liquidPath + '/liquid'
 // @ts-ignore
 window.__LD_ASSET_PATH__ = assetPath
 
+document.documentElement.classList.add('ld-theme-bubblegum')
+
 import(liquidPath + '/loader/index.js').then((module) => {
   const { applyPolyfills, defineCustomElements } = module
   applyPolyfills()
