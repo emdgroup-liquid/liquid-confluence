@@ -4,7 +4,7 @@ body {
 
   /* Confluence color scheme overwrite */
   --liquid-theme-topbarcolour: var(--ld-col-wht);
-  --liquid-theme-breadcrumbstextcolour: var(--ld-col-rp-700);
+  --liquid-theme-breadcrumbstextcolour: var(--ld-col-neutral-010);
   --liquid-theme-spacenamecolour: var(--ld-col-neutral-100);
   --liquid-theme-headingtextcolour: var(--ld-col-neutral-900);
   --liquid-theme-linkcolour: var(--ld-col-rp-700);

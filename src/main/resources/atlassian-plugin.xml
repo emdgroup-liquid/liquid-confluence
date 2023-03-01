@@ -40,7 +40,7 @@
 	               class="com.atlassian.confluence.themes.BaseColourScheme">
 	  <colour key="property.style.topbarcolour" value="var(--liquid-theme-topbarcolour, rgb(255, 255, 255))"/>
     <colour key="property.style.navbgcolour" value="var(--liquid-theme-navbgcolour, rgb(138, 104, 210))"/>
-    <colour key="property.style.breadcrumbstextcolour" value="var(--liquid-theme-breadcrumbstextcolour, rgb(80, 50, 145))"/>
+    <colour key="property.style.breadcrumbstextcolour" value="var(--liquid-theme-breadcrumbstextcolour, rgb(248, 248, 252))"/>
     <colour key="property.style.spacenamecolour" value="var(--liquid-theme-spacenamecolour, rgb(235, 228, 252))"/>
     <colour key="property.style.headingtextcolour" value="var(--liquid-theme-headingtextcolour, rgb(15, 26, 46))"/>
     <colour key="property.style.linkcolour" value="var(--liquid-theme-linkcolour, rgb(80, 50, 145))"/>
