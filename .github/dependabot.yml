@@ -4,3 +4,7 @@ updates:
     directory: '/src-frontend/'
     schedule:
       interval: 'weekly'
+  - package-ecosystem: 'maven'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
