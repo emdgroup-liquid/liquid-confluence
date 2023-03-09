@@ -4,7 +4,9 @@
 .DS_Store
 .idea
 *.iml
+*.afphoto
 target
+reports
 
 src/main/resources/out
 src-frontend/public/liquid
