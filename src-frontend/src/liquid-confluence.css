@@ -276,6 +276,10 @@ body {
   --aui-datepicker-hint-text-color: var(--ld-col-neutral-800);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* All buttons. */
 .aui-button {
   transition: none !important;
@@ -361,6 +365,14 @@ body #header .aui-header .aui-nav .aui-button-primary {
 }
 
 /* Footer. */
+#footer {
+  margin-inline: 0px !important;
+  padding-inline: 60px !important;
+
+  a {
+    white-space: normal;
+  }
+}
 body::after {
   content: '';
   position: fixed;
@@ -370,6 +382,11 @@ body::after {
 }
 .footer-body {
   filter: hue-rotate(180deg) invert(1);
+  background: none !important;
+
+  .license-eval {
+    display: none !important;
+  }
 }
 
 /* Icons. */
