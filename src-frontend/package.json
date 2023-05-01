@@ -32,7 +32,7 @@
     "prettier": "^2.8.8",
     "rollup-plugin-copy": "^3.4.0",
     "typescript": "^5.0.4",
-    "vite": "^4.3.1"
+    "vite": "^4.3.3"
   },
   "dependencies": {
     "@emdgroup-liquid/liquid": "^5.3.1"
