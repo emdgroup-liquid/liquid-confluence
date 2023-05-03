@@ -2,36 +2,6 @@ body {
   /* Typography */
   font-family: var(--ld-font-body);
 
-  /* Confluence color scheme overwrite */
-  --liquid-theme-topbarcolour: var(--ld-col-wht);
-  --liquid-theme-breadcrumbstextcolour: var(--ld-col-neutral-010);
-  --liquid-theme-spacenamecolour: var(--ld-col-neutral-100);
-  --liquid-theme-headingtextcolour: var(--ld-col-neutral-900);
-  --liquid-theme-linkcolour: var(--ld-col-rp-700);
-  --liquid-theme-bordercolour: var(--ld-col-rp-500);
-  --liquid-theme-navbgcolour: var(--ld-col-rp-500);
-  --liquid-theme-navtextcolour: var(--ld-col-wht);
-  --liquid-theme-navselectedbgcolour: var(--ld-col-rp-700);
-  --liquid-theme-navselectedtextcolour: var(--ld-col-wht);
-  --liquid-theme-topbarmenuselectedbgcolour: var(--ld-col-rp-600);
-  --liquid-theme-topbarmenuitemtextcolour: var(--ld-col-rp-600);
-  --liquid-theme-menuselectedbgcolour: var(--ld-col-rp-600);
-  --liquid-theme-menuitemtextcolour: var(--ld-col-rp-600);
-  --liquid-theme-menuitemselectedbgcolour: var(--ld-col-rp-600);
-  --liquid-theme-menuitemselectedtextcolour: var(--ld-col-wht);
-
-  --liquid-theme-headerbuttonbgcolour: var(--ld-col-wht);
-  --liquid-theme-headerbuttonbasebackgroundcolour: var(--ld-col-wht);
-  --liquid-theme-headerbuttontextcolour: var(--ld-col-neutral-010);
-  --liquid-theme-menuitemselectedbackgroundcolour: var(--ld-col-wht);
-  --liquid-theme-menuselectedbackgroundcolour: var(--ld-col-wht);
-  --liquid-theme-topbarmenuselectedbackgroundcolour: var(--ld-col-wht);
-  --liquid-theme-navbackgroundcolour: var(--ld-col-wht);
-  --liquid-theme-navselectedbackgroundcolour: var(--ld-col-wht);
-  --liquid-theme-searchfieldbackgroundcolour: var(--ld-col-rp-700);
-  --liquid-theme-searchfieldtextcolour: var(--ld-col-neutral-010);
-  --liquid-theme-topbarmenuselectedtextcolour: var(--ld-col-neutral-010);
-
   /* Confluence custom CSS properties overwrites */
   --aui-shadow1: var(--ld-thm-primary-alpha-lowest);
   --aui-shadow2: var(--ld-thm-primary-alpha-lowest);
@@ -44,7 +14,7 @@ body {
   --aui-page-border: var(--ld-col-neutral-050);
   --aui-border: var(--ld-col-neutral-050);
   --aui-border-strong: var(--ld-col-neutral-100);
-  --aui-focus: var(--ld-thm-primary-focus);
+  --aui-focus: var(--ld-thm-warning);
   --aui-link-color: var(--ld-thm-primary-hover);
   --aui-link-hover-color: var(--ld-thm-primary-active);
   --aui-link-active-color: var(--ld-thm-primary-hover);
@@ -288,7 +258,7 @@ html {
 /* Top bar. */
 body #header {
   .aui-header {
-    background-color: var(--ld-thm-bubblegum-primary);
+    background-color: var(--liquid-theme-topbarcolour);
     box-shadow: var(--ld-shadow-hover);
   }
   .aui-header-inner {
@@ -315,7 +285,7 @@ body #header {
 #header .aui-header a:hover,
 #header .aui-header a:active {
   color: var(--aui-link-color);
-  background-color: var(--ld-thm-bubblegum-primary-hover);
+  /*background-color: var(--ld-thm-bubblegum-primary-hover);*/
 }
 
 /* Primary button in top bar. */
@@ -365,6 +335,14 @@ body #header .aui-header .aui-nav .aui-button-primary {
 }
 
 /* Footer. */
+#header::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: inherit;
+  filter: brightness(0.44) saturate(0.8);
+}
 #footer {
   margin-inline: 0px !important;
   padding-inline: 60px !important;
@@ -372,13 +350,6 @@ body #header .aui-header .aui-nav .aui-button-primary {
   a {
     white-space: normal;
   }
-}
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: var(--ld-thm-bubblegum-primary-active);
 }
 .footer-body {
   filter: hue-rotate(180deg) invert(1);

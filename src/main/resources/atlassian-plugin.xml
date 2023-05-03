@@ -42,7 +42,7 @@
 
 	<colour-scheme key="liquid-colours" name="Colors from the Liquid Design System"
 	               class="com.atlassian.confluence.themes.BaseColourScheme">
-	  <colour key="property.style.topbarcolour" value="var(--liquid-theme-topbarcolour, rgb(255, 255, 255))"/>
+	  <colour key="property.style.topbarcolour" value="var(--liquid-theme-topbarcolour, rgb(80, 50, 145))"/>
     <colour key="property.style.navbgcolour" value="var(--liquid-theme-navbgcolour, rgb(138, 104, 210))"/>
     <colour key="property.style.breadcrumbstextcolour" value="var(--liquid-theme-breadcrumbstextcolour, rgb(248, 248, 252))"/>
     <colour key="property.style.spacenamecolour" value="var(--liquid-theme-spacenamecolour, rgb(235, 228, 252))"/>
@@ -55,7 +55,7 @@
     <colour key="property.style.topbarmenuselectedbgcolour" value="var(--liquid-theme-topbarmenuselectedbgcolour, rgb(113, 78, 187))"/>
     <colour key="property.style.topbarmenuitemtextcolour" value="var(--liquid-theme-topbarmenuitemtextcolour, rgb(113, 78, 187))"/>
     <colour key="property.style.menuselectedbgcolour" value="var(--liquid-theme-menuselectedbgcolour, rgb(113, 78, 187))"/>
-    <colour key="property.style.menuitemtextcolour" value="var(--liquid-theme-menuitemtextcolour, rgb(113, 78, 187))"/>
+    <colour key="property.style.menuitemtextcolour" value="var(--liquid-theme-menuitemtextcolour, rgb(69, 69, 84))"/>
     <colour key="property.style.menuitemselectedbgcolour" value="var(--liquid-theme-menuitemselectedbgcolour, rgb(113, 78, 187))"/>
     <colour key="property.style.menuitemselectedtextcolour" value="var(--liquid-theme-menuitemselectedtextcolour, rgb(255, 255, 255))"/>
 
