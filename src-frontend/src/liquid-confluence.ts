@@ -13,6 +13,15 @@ window.__LD_ASSET_PATH__ = assetPath
 
 document.documentElement.classList.add('ld-theme-bubblegum')
 
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.getElementById('header')
+  if (header) {
+    const headerBackgroundColor =
+      window.getComputedStyle(header).backgroundColor
+    document.body.style.backgroundColor = headerBackgroundColor
+  }
+})
+
 import(liquidPath + '/loader/index.js').then((module) => {
   const { applyPolyfills, defineCustomElements } = module
   applyPolyfills()

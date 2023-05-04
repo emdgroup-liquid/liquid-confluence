@@ -335,12 +335,12 @@ body #header .aui-header .aui-nav .aui-button-primary {
 }
 
 /* Footer. */
-#header::after {
+body::after {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: inherit;
+  background-color: inherit;
   filter: brightness(0.44) saturate(0.8);
 }
 #footer {
