@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (header) {
     const headerBackgroundColor =
       window.getComputedStyle(header).backgroundColor
-    document.body.style.backgroundColor = headerBackgroundColor
+    document.documentElement.style.color = headerBackgroundColor
   }
 })
 
