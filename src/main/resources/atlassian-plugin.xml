@@ -35,7 +35,6 @@
 		<resource type="download" name="liquid-confluence.css" location="/css/liquid-confluence.css"/>
 		<colour-scheme key="${project.groupId}.${project.artifactId}:liquid-colours"/>
 		<space-ia value="true"/>
-		<resource type="stylesheet" name="liquid-theme.vm" location="/includes/css/liquid-theme.vm"/>
 		<param name="space-config-path" value="/themes/liquidtheme/configuretheme.action"/>
 		<param name="global-config-path" value="/admin/themes/liquidtheme/configuretheme.action"/>
 	</theme>
