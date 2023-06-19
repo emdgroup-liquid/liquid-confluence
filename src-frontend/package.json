@@ -28,7 +28,7 @@
     "path-browserify": "^1.0.1",
     "postcss": "^8.4.24",
     "postcss-nested": "^6.0.1",
-    "postcss-nesting": "^11.2.2",
+    "postcss-nesting": "^11.3.0",
     "prettier": "^2.8.8",
     "rollup-plugin-copy": "^3.4.0",
     "typescript": "^5.1.3",
