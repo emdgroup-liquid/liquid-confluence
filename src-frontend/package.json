@@ -35,7 +35,7 @@
     "vite": "^4.5.2"
   },
   "dependencies": {
-    "@emdgroup-liquid/liquid": "^5.13.0"
+    "@emdgroup-liquid/liquid": "^5.14.0"
   },
   "browserslist": [
     "> 0.5%",
