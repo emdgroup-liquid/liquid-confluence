@@ -31,7 +31,7 @@
     "postcss-nesting": "^12.1.1",
     "prettier": "^3.2.5",
     "rollup-plugin-copy": "^3.5.0",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "vite": "^4.5.3"
   },
   "dependencies": {
