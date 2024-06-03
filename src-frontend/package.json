@@ -29,7 +29,7 @@
     "postcss": "^8.4.38",
     "postcss-nested": "^6.0.1",
     "postcss-nesting": "^12.1.5",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "rollup-plugin-copy": "^3.5.0",
     "typescript": "^5.4.5",
     "vite": "^4.5.3"
